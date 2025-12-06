@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration System</title>
+    <h1> Student Registration System </h1>
+    <hr>
+</head>
+
+<body>
+    <h2>Student Registration From</h2>
+ <form action="#" method="POST">
+
+<fieldset>
+    
+    <legend>Personal Information</legend>
+    <lable for="full name"> Full Name:</lable><br> 
+    <input type="text" id="full name" name="Full Name" placeholder="Enter Full Name" required ><br><br>
+    <lable for="age">Age:</lable><br>
+    <input type="number" id="age" name="Age:" placeholder="EnterAge" min="15" required>  
+
+</fieldset>
+
+<fieldset>
+    <legend>Academic Information</legend>
+  <label for="course">Course: </label><br>
+  <select id="course" name="Course" required >
+    <option value="" disable selected>Select a Course</option>
+    <option value="cs">Computer Science</option>
+    <option value="physics">Physics</option>
+    <option value="ee">Electrical Engineering</option>
+   </select><br><br>
+
+    <label for="email"> Email Address:</label><br>
+    <input type="email" name="email" placeholder="Enter Email Address" required> 
+</fieldset>
+
+<fieldset>
+    <legend>Additional Information</legend>
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="45" placeholder="any additional information..."></textarea>
+</fieldset><br>
+
+<input type="submit" value="submit" > </form><hr>
+ <h2>Registered Student</h2>
+ <table border="1" width="100%">
+ <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+ </thead>
+
+ <tbody>
+    <tr>
+        <tr>
+            <td>Charles Leclerc</td>
+            <td>20</td>
+            <td>Computer science</td>
+            <td>charles@tech.edu</td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+    </tr>
+    <tr>
+        <tr>
+            <td>Lewis Hamilton</td>
+            <td>22</td>
+            <td>Electrical Engineering</td>
+            <td>lewis@tech.edu</td>
+            <td><a href="#">Delete</a></td> 
+        </tr>
+    </tr>
+ </tbody>
+</table>
+
+</body>
+
+</html>
